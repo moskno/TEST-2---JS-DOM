@@ -11,6 +11,7 @@
 <body>
     <main class="main-container">
         <h1 class="title">BATTALION FORCE MANAGEMENT</h1>
+        <hr>
         <form action="" id="form-add-details">
             <input type="text" class="input" id="fullName" placeholder="Full Name" required>
             <input type="text" class="input" id="rank" placeholder="Rank" required>
@@ -26,9 +27,10 @@
         </form>
         <div class="table-container">
             <h2 class="title">FORCES OVERVIEW</h2>
+            <hr>
             <table id="data-table">
                 <thead>
-                    <tr>
+                    <tr id="head-row">
                         <th onclick="sortTable(0)">Full Name</th>
                         <th>RANK</th>
                         <th>POSITION</th>

@@ -33,6 +33,7 @@ function createSoldierRow(soldier){
     ['Remove', 'Mission', 'Edit'].forEach(label => {
         const button = document.createElement('button')
         button.textContent = label;
+        button.classList.add('btn');
         actionCell.appendChild(button);
     });
     tableRow.appendChild(actionCell);
