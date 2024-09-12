@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soldiers Management</title>
+    <link rel="icon" href="soldier.png" type="image/icon type">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <main class="main-container">
+        <h1 class="title">BATTALION FORCE MANAGEMENT</h1>
+        <form action="" id="form-add-details">
+            <input type="text" class="input" id="fullName" placeholder="Full Name" required>
+            <input type="text" class="input" id="rank" placeholder="Rank" required>
+            <input type="text" class="input" id="position" placeholder="Position" required>
+            <input type="text" class="input" id="platoon" placeholder="Platoon" required>
+            <input type="number" class="input" id="missionTime" placeholder="Mission Time (seconds)" required>
+            <select name="status" class="input" id="status">
+                <option value="Active">Active</option>
+                <option value="Reserve">Reserve</option>
+                <option value="Retired">Retired</option>
+            </select>
+            <input type="submit" class="btn" value="Add Personnel">
+        </form>
+        <div class="table-container">
+            <h2 class="title">FORCES OVERVIEW</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Full Name</th>
+                        <th>RANK</th>
+                        <th>POSITION</th>
+                        <th>PLATOON</th>
+                        <th>STATUS</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <section id="change-container">
+        <h1 class="title">EDIT PERSONNEL</h1>
+        <form action="" id="form-add-details">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <select name="status" id="status">
+                <option value="Active">Active</option>
+                <option value="Reserve">Reserve</option>
+                <option value="Retired">Retired</option>
+            </select>
+            <input type="number">
+            <input type="submit" value="Save changes">
+            <button>Cancel</button>
+        </form>
+    </section>
+</body>
+<script src='script.js'></script>
+</html>
